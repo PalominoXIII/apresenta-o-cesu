@@ -1,0 +1,167 @@
+/*O CÓDIGO FOI FEITO COM AUXÍLIO DO CHAT GPT E COM MEUS CONHECIMENTOS ESTUDADOS ATÉ AGORA */
+
+body {
+    background-color: #f6ede0; /* Cor de fundo do corpo */
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #b78b5b;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    color: #412c2c; /* Define a cor do texto do h1 como branca */
+    margin: 0; /* Remove a margem padrão do h1, se necessário */
+}
+
+.fundo-branco {
+    background-color: #FFFFFF; /* Cor de fundo branca para o conteúdo */
+    padding: 20px; /* Espaçamento ao redor do conteúdo */
+    margin: 20px auto; /* Margem automática para centralizar */
+    max-width: 1200px; /* Largura máxima do conteúdo, ajustável conforme necessário */
+    border-radius: 5px; /* Bordas arredondadas para o efeito "folha" */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para o efeito de profundidade */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.descricao, .foto {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #412c2c;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.foto {
+    background-color: #412c2c;
+    text-align: center;
+}
+
+.foto img {
+    max-width: 30%; /* Ajusta o tamanho da imagem para ocupar a largura do contêiner */
+    height: auto;
+    border-radius: 5px;
+}
+
+.social-icons {
+    display: flex; /* Ativa o layout flexbox */
+    justify-content: space-around; /* Distribui os ícones ao longo do espaço disponível */
+    align-items: center; /* Alinha os ícones verticalmente no centro */
+    padding: 20px;
+    background-color: #FFFFFF; /* Garantir fundo branco contínuo */
+    border-radius: 5px; /* Bordas arredondadas para o efeito "folha" */
+    margin: 0; /* Remover margens para garantir o fundo contínuo */
+}
+
+.social-icons a {
+    display: flex; /* Faz com que os links ocupem o tamanho necessário para os ícones */
+    justify-content: center; /* Centraliza o ícone dentro do link */
+    align-items: center; /* Centraliza o ícone verticalmente dentro do link */
+    margin: 0 20px; /* Adiciona margem para separar os ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.social-icons i {
+    font-size: 40px; /* Aumenta o tamanho dos ícones */
+    color: #434345; /* Define a cor dos ícones para combinar com o cabeçalho, ajuste conforme necessário */
+}
+
+.text-segment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFFFFF; /* Garantir fundo branco contínuo */
+    border-radius: 5px; /* Bordas arredondadas para o efeito "folha" */
+    margin: 0; /* Remover margens para garantir o fundo contínuo */
+}
+
+.text-segment > div {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.curriculo {
+    text-align: justify;
+}
+
+/* CSS para o slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%; /* Ajuste para garantir que apenas um slide apareça por vez */
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Alinha os itens em coluna em vez de linha */
+    }
+
+    .foto {
+        order: 2; /* Move a div .foto para baixo */
+    }
+
+    .descricao {
+        order: 1; /* Mantém a div .descricao no topo */
+    }
+    
+    .text-segment {
+        grid-template-columns: 1fr; /* Uma coluna por vez */
+    }
+}

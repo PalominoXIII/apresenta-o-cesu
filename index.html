@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Simples</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Edson Jonas Coutrinho</h1>
+    </header>
+
+    <div class="fundo-branco">
+        <div class="main-content">
+            <div class="descricao">
+                <p>Sou estudante de ADS na UNICESUMAR, me considero uma pessoa muito esforçada e dedicada em tudo que
+                    faço. Estou em busca de uma oportunidade para iniciar minha vida profissional no mercado de
+                    tecnologia, de forma que eu possa corroborar com o crescimento da empresa e promover meu
+                    desenvolvimento profissional.</p>
+            </div>
+            <div class="foto">
+                <img src="./src/imagens/eu.png" alt="Foto Exemplo">
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/edson-jonas-coutrinho-767bb7235/" title="Ir para o LinkedIn"
+                target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" title="Ir para o GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/edsoneujonas/" title="Ir para o Instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="text-segment">
+            <div class="curriculo">
+                <h1>INFORMAÇÕES:</h1>
+                <p>ejedsonomaximo8@gmail.com</p>
+                <p>Maringá - PR, 26 anos, solteiro.</p>
+                <p>Ensino médio completo.</p>
+                <p>Inglês avançado.</p>
+                <p>Conhecimento em informática.</p>
+                <p>Com disponibilidade de horários.</p>
+            </div>
+            <div class="curriculo">
+                <h1>EXPERIÊNCIA:</h1>
+                <p>15/06/22 - 03/03/23</p>
+                <p><b>CONSULTOR PEDAGÓGICO JR, UNICESUMAR</b></p>
+                <p>Auxílio pedagógico aos alunos EAD da UNICESUMAR. Telefonia, WhatsApp, atendimento eletrônico e dúvidas relacionadas a graduação e pós-graduação.</p>
+                <p>03/03/22 - ATUALMENTE</p>
+                <p><b>CONSULTOR DE NEGÓCIOS PLENO, UNICESUMAR</b></p>
+                <p>Canal de retenção, visando evitar a evasão de alunos de cursos de graduação e pós-graduação EAD, ofertando benefícios e políticas de acordo com a necessidade do aluno.</p>
+            </div>
+            <div class="curriculo">
+                <h1>ESCOLARIDADE:</h1>
+                <p><b>ENSINO MÉDIO COMPLETO EM 2015.</b></p>
+                <p><b>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - UNICESUMAR.</b></p>
+                <p>Cursando na instituição de ensino superior UNICESUMAR o curso de Análise e Desenvolvimento de Sistemas. Atualmente no segundo semestre do curso.</p>
+            </div>
+            <div class="curriculo">
+                <h1>HABILIDADES:</h1>
+                <p><b>HTML, CSS e JS</b></p>
+                <p>Conhecimento básico nestas linguagens.</p>
+                <p>Inglês avançado.</p>
+                <p>Tenho facilidade em lidar com as pessoas e trabalhar em equipe.</p>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="./src/imagens/1.png" alt="Slide 1"></div>
+                <div class="slide"><img src="./src/imagens/2.png" alt="Slide 2"></div>
+                <div class="slide"><img src="./src/imagens/2.png" alt="Slide 2"></div>
+                <div class="slide"><img src="./src/imagens/3.png" alt="Slide 3"></div>
+                <div class="slide"><img src="./src/imagens/3.png" alt="Slide 3"></div>
+                <div class="slide"><img src="./src/imagens/4.png" alt="Slide 4"></div>
+                <div class="slide"><img src="./src/imagens/4.png" alt="Slide 4"></div>
+                <div class="slide"><img src="./src/imagens/5.png" alt="Slide 5"></div>
+                <div class="slide"><img src="./src/imagens/5.png" alt="Slide 5"></div>
+                <div class="slide"><img src="./src/imagens/6.png" alt="Slide 6"></div>
+                <div class="slide"><img src="./src/imagens/6.png" alt="Slide 6"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="./src/js/slider.js"></script>
+</body>
+
+</html>
